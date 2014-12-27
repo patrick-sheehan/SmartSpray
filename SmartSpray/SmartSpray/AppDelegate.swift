@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        var mainViewController = HomeViewController(nibName:"HomeViewController", bundle:nil)
+        var mainViewController = HomeViewController()//nibName:"HomeViewController", bundle:nil)
         
         window?.rootViewController = mainViewController
         window?.makeKeyAndVisible()

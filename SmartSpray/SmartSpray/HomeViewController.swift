@@ -7,22 +7,29 @@
 //
 
 import UIKit
+import AVFoundation
 
 class HomeViewController: UIViewController {
     
-//    override init() {
-//        super.init(nibName: "HomeViewController", bundle: nil)
-//    }
-//
-//    required init(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
+    var audioPlayer : AVAudioPlayer?
+
+    override init() {
+        super.init(nibName: "HomeViewController", bundle: nil)
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        var path = NSBundle.mainBundle().resourcePath! + "/siren.mp3"
+        var soundUrl = NSURL.fileURLWithPath(path)
+        
+        audioPlayer = AVAudioPlayer(contentsOfURL: soundUrl, error: nil)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,6 +40,13 @@ class HomeViewController: UIViewController {
     
     @IBAction func speakerButtonPressed(sender: AnyObject) {
         
+        if (audioPlayer?.playing == true) {
+            audioPlayer?.stop()
+            audioPlayer?.currentTime = 0
+        }
+        else {
+            audioPlayer?.play()
+        }
     }
     
     @IBAction func phoneButtonPressed(sender: AnyObject) {

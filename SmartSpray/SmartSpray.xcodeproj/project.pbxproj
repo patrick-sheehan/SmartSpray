@@ -17,6 +17,11 @@
 		CDF0D7D51A4EA87A00FBA892 /* msds-name.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7D11A4EA87A00FBA892 /* msds-name.png */; };
 		CDF0D7D61A4EA87A00FBA892 /* separate-top-angle.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7D21A4EA87A00FBA892 /* separate-top-angle.png */; };
 		CDF0D7D71A4EA87A00FBA892 /* smart-spray.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7D31A4EA87A00FBA892 /* smart-spray.png */; };
+		CDF0D7E61A4F5DC600FBA892 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF0D7E51A4F5DC600FBA892 /* AVFoundation.framework */; };
+		CDF0D7E81A4F5DD400FBA892 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF0D7E71A4F5DD400FBA892 /* CoreGraphics.framework */; };
+		CDF0D7EA1A4F5DDB00FBA892 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF0D7E91A4F5DDB00FBA892 /* UIKit.framework */; };
+		CDF0D7EC1A4F5DE400FBA892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF0D7EB1A4F5DE400FBA892 /* Foundation.framework */; };
+		CDF0D7F01A4F5FEC00FBA892 /* siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7EF1A4F5FEC00FBA892 /* siren.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		CDF0D7D11A4EA87A00FBA892 /* msds-name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "msds-name.png"; path = "Images.xcassets/msds-name.png"; sourceTree = "<group>"; };
 		CDF0D7D21A4EA87A00FBA892 /* separate-top-angle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "separate-top-angle.png"; path = "Images.xcassets/separate-top-angle.png"; sourceTree = "<group>"; };
 		CDF0D7D31A4EA87A00FBA892 /* smart-spray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "smart-spray.png"; path = "Images.xcassets/smart-spray.png"; sourceTree = "<group>"; };
+		CDF0D7E51A4F5DC600FBA892 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CDF0D7E71A4F5DD400FBA892 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CDF0D7E91A4F5DDB00FBA892 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDF0D7EB1A4F5DE400FBA892 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDF0D7EF1A4F5FEC00FBA892 /* siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = siren.mp3; path = "Audio Files/siren.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF0D7EC1A4F5DE400FBA892 /* Foundation.framework in Frameworks */,
+				CDF0D7EA1A4F5DDB00FBA892 /* UIKit.framework in Frameworks */,
+				CDF0D7E81A4F5DD400FBA892 /* CoreGraphics.framework in Frameworks */,
+				CDF0D7E61A4F5DC600FBA892 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +111,12 @@
 		CD3613E91A49C4B4006AE87E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDF0D7EB1A4F5DE400FBA892 /* Foundation.framework */,
+				CDF0D7E91A4F5DDB00FBA892 /* UIKit.framework */,
+				CDF0D7E71A4F5DD400FBA892 /* CoreGraphics.framework */,
+				CDF0D7E51A4F5DC600FBA892 /* AVFoundation.framework */,
 				CDF0D7D81A4EA88200FBA892 /* Images */,
+				CDF0D7EF1A4F5FEC00FBA892 /* siren.mp3 */,
 				CD3613EA1A49C4B4006AE87E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -220,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF0D7F01A4F5FEC00FBA892 /* siren.mp3 in Resources */,
 				CDF0D7D61A4EA87A00FBA892 /* separate-top-angle.png in Resources */,
 				CDF0D7D71A4EA87A00FBA892 /* smart-spray.png in Resources */,
 				CDF0D7D41A4EA87A00FBA892 /* msds-icon.png in Resources */,
