@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		CD3613EC1A49C4B4006AE87E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3613EB1A49C4B4006AE87E /* AppDelegate.swift */; };
 		CD3613EF1A49C4B4006AE87E /* SmartSpray.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD3613ED1A49C4B4006AE87E /* SmartSpray.xcdatamodeld */; };
-		CD3613F11A49C4B4006AE87E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3613F01A49C4B4006AE87E /* ViewController.swift */; };
-		CD3613F41A49C4B4006AE87E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3613F21A49C4B4006AE87E /* Main.storyboard */; };
 		CD3613F61A49C4B4006AE87E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3613F51A49C4B4006AE87E /* Images.xcassets */; };
-		CD3613F91A49C4B4006AE87E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD3613F71A49C4B4006AE87E /* LaunchScreen.xib */; };
 		CD3614051A49C4B4006AE87E /* SmartSprayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3614041A49C4B4006AE87E /* SmartSprayTests.swift */; };
+		CDF0D7CA1A4EA5A600FBA892 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */; };
+		CDF0D7CF1A4EA68600FBA892 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */; };
+		CDF0D7D41A4EA87A00FBA892 /* msds-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7D01A4EA87A00FBA892 /* msds-icon.png */; };
+		CDF0D7D51A4EA87A00FBA892 /* msds-name.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7D11A4EA87A00FBA892 /* msds-name.png */; };
+		CDF0D7D61A4EA87A00FBA892 /* separate-top-angle.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7D21A4EA87A00FBA892 /* separate-top-angle.png */; };
+		CDF0D7D71A4EA87A00FBA892 /* smart-spray.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7D31A4EA87A00FBA892 /* smart-spray.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +34,16 @@
 		CD3613EA1A49C4B4006AE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD3613EB1A49C4B4006AE87E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD3613EE1A49C4B4006AE87E /* SmartSpray.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartSpray.xcdatamodel; sourceTree = "<group>"; };
-		CD3613F01A49C4B4006AE87E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD3613F31A49C4B4006AE87E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD3613F51A49C4B4006AE87E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CD3613F81A49C4B4006AE87E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CD3613FE1A49C4B4006AE87E /* SmartSprayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartSprayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3614031A49C4B4006AE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD3614041A49C4B4006AE87E /* SmartSprayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSprayTests.swift; sourceTree = "<group>"; };
+		CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CDF0D7D01A4EA87A00FBA892 /* msds-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "msds-icon.png"; path = "Images.xcassets/msds-icon.png"; sourceTree = "<group>"; };
+		CDF0D7D11A4EA87A00FBA892 /* msds-name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "msds-name.png"; path = "Images.xcassets/msds-name.png"; sourceTree = "<group>"; };
+		CDF0D7D21A4EA87A00FBA892 /* separate-top-angle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "separate-top-angle.png"; path = "Images.xcassets/separate-top-angle.png"; sourceTree = "<group>"; };
+		CDF0D7D31A4EA87A00FBA892 /* smart-spray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "smart-spray.png"; path = "Images.xcassets/smart-spray.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				CD3613EB1A49C4B4006AE87E /* AppDelegate.swift */,
-				CD3613F01A49C4B4006AE87E /* ViewController.swift */,
-				CD3613F21A49C4B4006AE87E /* Main.storyboard */,
 				CD3613F51A49C4B4006AE87E /* Images.xcassets */,
-				CD3613F71A49C4B4006AE87E /* LaunchScreen.xib */,
 				CD3613ED1A49C4B4006AE87E /* SmartSpray.xcdatamodeld */,
+				CDF0D7CB1A4EA64700FBA892 /* Views */,
 				CD3613E91A49C4B4006AE87E /* Supporting Files */,
 			);
 			path = SmartSpray;
@@ -93,6 +97,7 @@
 		CD3613E91A49C4B4006AE87E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDF0D7D81A4EA88200FBA892 /* Images */,
 				CD3613EA1A49C4B4006AE87E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -113,6 +118,26 @@
 				CD3614031A49C4B4006AE87E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDF0D7CB1A4EA64700FBA892 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */,
+				CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CDF0D7D81A4EA88200FBA892 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CDF0D7D01A4EA87A00FBA892 /* msds-icon.png */,
+				CDF0D7D11A4EA87A00FBA892 /* msds-name.png */,
+				CDF0D7D21A4EA87A00FBA892 /* separate-top-angle.png */,
+				CDF0D7D31A4EA87A00FBA892 /* smart-spray.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +220,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3613F41A49C4B4006AE87E /* Main.storyboard in Resources */,
-				CD3613F91A49C4B4006AE87E /* LaunchScreen.xib in Resources */,
+				CDF0D7D61A4EA87A00FBA892 /* separate-top-angle.png in Resources */,
+				CDF0D7D71A4EA87A00FBA892 /* smart-spray.png in Resources */,
+				CDF0D7D41A4EA87A00FBA892 /* msds-icon.png in Resources */,
 				CD3613F61A49C4B4006AE87E /* Images.xcassets in Resources */,
+				CDF0D7D51A4EA87A00FBA892 /* msds-name.png in Resources */,
+				CDF0D7CA1A4EA5A600FBA892 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3613F11A49C4B4006AE87E /* ViewController.swift in Sources */,
 				CD3613EC1A49C4B4006AE87E /* AppDelegate.swift in Sources */,
 				CD3613EF1A49C4B4006AE87E /* SmartSpray.xcdatamodeld in Sources */,
+				CDF0D7CF1A4EA68600FBA892 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,25 +266,6 @@
 			targetProxy = CD3613FF1A49C4B4006AE87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CD3613F21A49C4B4006AE87E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD3613F31A49C4B4006AE87E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CD3613F71A49C4B4006AE87E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD3613F81A49C4B4006AE87E /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CD3614061A49C4B4006AE87E /* Debug */ = {
@@ -409,6 +418,7 @@
 				CD36140A1A49C4B4006AE87E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD36140B1A49C4B4006AE87E /* Build configuration list for PBXNativeTarget "SmartSprayTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +427,7 @@
 				CD36140D1A49C4B4006AE87E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
