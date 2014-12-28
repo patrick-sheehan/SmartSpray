@@ -21,9 +21,9 @@
                         <constraint firstAttribute="height" constant="99" id="c0v-ug-JwY"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fR4-o5-Onh">
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fR4-o5-Onh">
                     <rect key="frame" x="8" y="364" width="292" height="228"/>
-                    <state key="normal" title="Message Icon">
+                    <state key="normal" title="Message Icon" image="message-icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <variation key="widthClass=regular" fixedFrame="YES">
@@ -33,27 +33,27 @@
                         <action selector="messageButtonPressed:" destination="-1" eventType="touchUpInside" id="p4c-X6-hgd"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gw-6Y-Brp">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gw-6Y-Brp">
                     <rect key="frame" x="300" y="364" width="292" height="228"/>
-                    <state key="normal" title="Phone Icon">
+                    <state key="normal" title="Phone Icon" image="phone-icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="phoneButtonPressed:" destination="-1" eventType="touchUpInside" id="2vI-eR-YqV"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvH-et-nCC">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvH-et-nCC">
                     <rect key="frame" x="8" y="135" width="292" height="229"/>
-                    <state key="normal" title="Speaker Icon">
+                    <state key="normal" title="Speaker Icon" image="speaker-icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="speakerButtonPressed:" destination="-1" eventType="touchUpInside" id="B1W-Yf-Skg"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0B-pG-AZq">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0B-pG-AZq">
                     <rect key="frame" x="300" y="135" width="292" height="229"/>
-                    <state key="normal" title="Camera Icon">
+                    <state key="normal" title="Camera Icon" image="camera-icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <variation key="widthClass=regular" fixedFrame="YES">
@@ -91,6 +91,10 @@
         </view>
     </objects>
     <resources>
+        <image name="camera-icon.png" width="512" height="512"/>
+        <image name="message-icon.png" width="512" height="512"/>
         <image name="msds-name.png" width="1170" height="113"/>
+        <image name="phone-icon.png" width="512" height="512"/>
+        <image name="speaker-icon.png" width="1024" height="1024"/>
     </resources>
 </document>

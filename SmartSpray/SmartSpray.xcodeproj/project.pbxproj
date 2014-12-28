@@ -22,6 +22,10 @@
 		CDF0D7EA1A4F5DDB00FBA892 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF0D7E91A4F5DDB00FBA892 /* UIKit.framework */; };
 		CDF0D7EC1A4F5DE400FBA892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF0D7EB1A4F5DE400FBA892 /* Foundation.framework */; };
 		CDF0D7F01A4F5FEC00FBA892 /* siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7EF1A4F5FEC00FBA892 /* siren.mp3 */; };
+		CDF0D7F51A50B7B500FBA892 /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7F11A50B7B500FBA892 /* camera-icon.png */; };
+		CDF0D7F61A50B7B500FBA892 /* message-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7F21A50B7B500FBA892 /* message-icon.png */; };
+		CDF0D7F71A50B7B500FBA892 /* phone-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7F31A50B7B500FBA892 /* phone-icon.png */; };
+		CDF0D7F81A50B7B500FBA892 /* speaker-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7F41A50B7B500FBA892 /* speaker-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		CDF0D7E91A4F5DDB00FBA892 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CDF0D7EB1A4F5DE400FBA892 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDF0D7EF1A4F5FEC00FBA892 /* siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = siren.mp3; path = "Audio Files/siren.mp3"; sourceTree = "<group>"; };
+		CDF0D7F11A50B7B500FBA892 /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-icon.png"; path = "Images.xcassets/camera-icon.png"; sourceTree = "<group>"; };
+		CDF0D7F21A50B7B500FBA892 /* message-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "message-icon.png"; path = "Images.xcassets/message-icon.png"; sourceTree = "<group>"; };
+		CDF0D7F31A50B7B500FBA892 /* phone-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone-icon.png"; path = "Images.xcassets/phone-icon.png"; sourceTree = "<group>"; };
+		CDF0D7F41A50B7B500FBA892 /* speaker-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speaker-icon.png"; path = "Images.xcassets/speaker-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,10 @@
 		CDF0D7D81A4EA88200FBA892 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CDF0D7F11A50B7B500FBA892 /* camera-icon.png */,
+				CDF0D7F21A50B7B500FBA892 /* message-icon.png */,
+				CDF0D7F31A50B7B500FBA892 /* phone-icon.png */,
+				CDF0D7F41A50B7B500FBA892 /* speaker-icon.png */,
 				CDF0D7D01A4EA87A00FBA892 /* msds-icon.png */,
 				CDF0D7D11A4EA87A00FBA892 /* msds-name.png */,
 				CDF0D7D21A4EA87A00FBA892 /* separate-top-angle.png */,
@@ -240,11 +252,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDF0D7F01A4F5FEC00FBA892 /* siren.mp3 in Resources */,
+				CDF0D7F51A50B7B500FBA892 /* camera-icon.png in Resources */,
 				CDF0D7D61A4EA87A00FBA892 /* separate-top-angle.png in Resources */,
 				CDF0D7D71A4EA87A00FBA892 /* smart-spray.png in Resources */,
+				CDF0D7F61A50B7B500FBA892 /* message-icon.png in Resources */,
+				CDF0D7F71A50B7B500FBA892 /* phone-icon.png in Resources */,
 				CDF0D7D41A4EA87A00FBA892 /* msds-icon.png in Resources */,
 				CD3613F61A49C4B4006AE87E /* Images.xcassets in Resources */,
 				CDF0D7D51A4EA87A00FBA892 /* msds-name.png in Resources */,
+				CDF0D7F81A50B7B500FBA892 /* speaker-icon.png in Resources */,
 				CDF0D7CA1A4EA5A600FBA892 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
