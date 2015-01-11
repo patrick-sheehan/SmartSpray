@@ -19,24 +19,22 @@ class CBCentralManagerViewController: UIViewController, CBCentralManagerDelegate
     var myPeripheral: CBPeripheral?
     var smartSprayers = NSMutableArray()
 
-    override init() {
-        super.init()
-        self.myCentralManager = CBCentralManager(delegate: self, queue: nil)
-        self.startScan()
-    }
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var myTextView: UITextView!
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: "HomeViewController", bundle: nil)
+    override init() {
+        super.init(nibName: "CBCentralManagerViewController", bundle: nil)
     }
 
     required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(nibName: "CBCentralManagerViewController", bundle: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        myCentralManager = CBCentralManager()
+        myCentralManager = CBCentralManager(delegate: self, queue: nil)
+        self.startScan()
     }
 
     override func viewWillDisappear(animated: Bool) {

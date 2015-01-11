@@ -49,6 +49,9 @@ class CBPeripheralViewController: UIViewController, CBPeripheralManagerDelegate,
         
     }
     
+    func peripheralManagerIsReadyToUpdateSubscribers(peripheral: CBPeripheralManager!) {
+        self.sendData()
+    }
     @IBAction func activateFirstStage() {
         
     }

@@ -17,6 +17,7 @@
 		CDEDC2381A626E9700EA0127 /* CBCentralManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDC2371A626E9700EA0127 /* CBCentralManagerViewController.swift */; };
 		CDEDC23C1A6274C500EA0127 /* CBPeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDC23B1A6274C500EA0127 /* CBPeripheralViewController.swift */; };
 		CDEDC23E1A62792F00EA0127 /* CBPeripheralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEDC23D1A62792F00EA0127 /* CBPeripheralViewController.xib */; };
+		CDEDC2401A62816F00EA0127 /* CBCentralManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEDC23F1A62816F00EA0127 /* CBCentralManagerViewController.xib */; };
 		CDF0D7CA1A4EA5A600FBA892 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */; };
 		CDF0D7CF1A4EA68600FBA892 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */; };
 		CDF0D7D41A4EA87A00FBA892 /* msds-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7D01A4EA87A00FBA892 /* msds-icon.png */; };
@@ -59,6 +60,7 @@
 		CDEDC2371A626E9700EA0127 /* CBCentralManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBCentralManagerViewController.swift; sourceTree = "<group>"; };
 		CDEDC23B1A6274C500EA0127 /* CBPeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBPeripheralViewController.swift; sourceTree = "<group>"; };
 		CDEDC23D1A62792F00EA0127 /* CBPeripheralViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBPeripheralViewController.xib; sourceTree = "<group>"; };
+		CDEDC23F1A62816F00EA0127 /* CBCentralManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBCentralManagerViewController.xib; sourceTree = "<group>"; };
 		CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CDF0D7D01A4EA87A00FBA892 /* msds-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "msds-icon.png"; path = "Images.xcassets/msds-icon.png"; sourceTree = "<group>"; };
@@ -122,11 +124,12 @@
 			isa = PBXGroup;
 			children = (
 				CD3613EB1A49C4B4006AE87E /* AppDelegate.swift */,
-				CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */,
 				CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */,
+				CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */,
+				CDEDC23F1A62816F00EA0127 /* CBCentralManagerViewController.xib */,
 				CDEDC2371A626E9700EA0127 /* CBCentralManagerViewController.swift */,
-				CDEDC23B1A6274C500EA0127 /* CBPeripheralViewController.swift */,
 				CDEDC23D1A62792F00EA0127 /* CBPeripheralViewController.xib */,
+				CDEDC23B1A6274C500EA0127 /* CBPeripheralViewController.swift */,
 				CD3613E91A49C4B4006AE87E /* Supporting Files */,
 			);
 			path = SmartSpray;
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDF0D7F01A4F5FEC00FBA892 /* siren.mp3 in Resources */,
+				CDEDC2401A62816F00EA0127 /* CBCentralManagerViewController.xib in Resources */,
 				CDF0D7F51A50B7B500FBA892 /* camera-icon.png in Resources */,
 				CDF0D7D61A4EA87A00FBA892 /* separate-top-angle.png in Resources */,
 				CDEDC23E1A62792F00EA0127 /* CBPeripheralViewController.xib in Resources */,
