@@ -137,9 +137,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CBCentralManagerDelegate,
     
     // MARK: - CBPeripheral delegate methods
     
+    func peripheral(peripheral: CBPeripheral!, didDiscoverServices error: NSError!) {
+        // TODO: didDiscoverServices
+        println("didDiscoverServices")
+    }
     
+    func peripheral(peripheral: CBPeripheral!, didDiscoverCharacteristicsForService service: CBService!, error: NSError!) {
+        println("didDiscoverCharacteristicsForService")
+    }
     
-    
+    func peripheral(peripheral: CBPeripheral!, didUpdateValueForCharacteristic characteristic: CBCharacteristic!, error: NSError!) {
+        println("didUpdateValueForCharacteristic")
+    }
     
     // MARK: - Core Data stack
 
