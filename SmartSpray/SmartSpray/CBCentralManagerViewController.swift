@@ -24,6 +24,10 @@ class CBCentralManagerViewController: UIViewController, CBCentralManagerDelegate
         self.myCentralManager = CBCentralManager(delegate: self, queue: nil)
         self.startScan()
     }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: "HomeViewController", bundle: nil)
+    }
 
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -35,10 +39,15 @@ class CBCentralManagerViewController: UIViewController, CBCentralManagerDelegate
         myCentralManager = CBCentralManager()
     }
 
+    override func viewWillDisappear(animated: Bool) {
+        myCentralManager?.stopScan()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     // MARK: - Start/Stop Scan methods
     
     func isLECapableHardware() -> Bool {
@@ -127,16 +136,11 @@ class CBCentralManagerViewController: UIViewController, CBCentralManagerDelegate
     }
     
     func centralManager(central: CBCentralManager!, didDisconnectPeripheral peripheral: CBPeripheral!, error: NSError!) {
-        //        self.connected = "Not connected"
-        //        connectButton.title = "Connect"
         
-        if let p = self.myPeripheral {
-            p.delegate = nil
-        }
+        var options = NSDictionary(object: NSNumber(bool: true), forKey:CBCentralManagerScanOptionAllowDuplicatesKey)
         
-        self.myPeripheral = nil
+        myCentralManager?.scanForPeripheralsWithServices([CBUUID(string: TRANSFER_SERVICE_UUID)], options: options)
     }
-    
     
     func centralManager(central: CBCentralManager!, didFailToConnectPeripheral peripheral: CBPeripheral!, error: NSError!) {
         println("Fail to connect to peripheral: \(peripheral) with error = \(error.localizedDescription)")
@@ -171,6 +175,19 @@ class CBCentralManagerViewController: UIViewController, CBCentralManagerDelegate
     
     func peripheral(peripheral: CBPeripheral!, didUpdateValueForCharacteristic characteristic: CBCharacteristic!, error: NSError!) {
         println("didUpdateValueForCharacteristic")
+    }
+    
+    func peripheral(peripheral: CBPeripheral!, didUpdateNotificationStateForCharacteristic characteristic: CBCharacteristic!, error: NSError!) {
+        if characteristic.UUID.isEqual(CBUUID(string: TRANSFER_CHARACTERISTIC_UUID)) {
+            return;
+        }
+        
+        if characteristic.isNotifying {
+            println("Notification began on \(characteristic)")
+        }
+        else { // Notification has stopped
+            myCentralManager?.cancelPeripheralConnection(peripheral)
+        }
     }
 
 }
