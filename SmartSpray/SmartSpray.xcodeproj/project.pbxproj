@@ -13,6 +13,8 @@
 		CD3613EF1A49C4B4006AE87E /* SmartSpray.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD3613ED1A49C4B4006AE87E /* SmartSpray.xcdatamodeld */; };
 		CD3613F61A49C4B4006AE87E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3613F51A49C4B4006AE87E /* Images.xcassets */; };
 		CD3614051A49C4B4006AE87E /* SmartSprayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3614041A49C4B4006AE87E /* SmartSprayTests.swift */; };
+		CDEDC2331A625B4500EA0127 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDEDC2321A625B4500EA0127 /* Default-568h@2x.png */; };
+		CDEDC2381A626E9700EA0127 /* CBCentralManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDC2371A626E9700EA0127 /* CBCentralManagerViewController.swift */; };
 		CDF0D7CA1A4EA5A600FBA892 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */; };
 		CDF0D7CF1A4EA68600FBA892 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */; };
 		CDF0D7D41A4EA87A00FBA892 /* msds-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7D01A4EA87A00FBA892 /* msds-icon.png */; };
@@ -51,6 +53,8 @@
 		CD3613FE1A49C4B4006AE87E /* SmartSprayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartSprayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3614031A49C4B4006AE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD3614041A49C4B4006AE87E /* SmartSprayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSprayTests.swift; sourceTree = "<group>"; };
+		CDEDC2321A625B4500EA0127 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		CDEDC2371A626E9700EA0127 /* CBCentralManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBCentralManagerViewController.swift; sourceTree = "<group>"; };
 		CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CDF0D7D01A4EA87A00FBA892 /* msds-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "msds-icon.png"; path = "Images.xcassets/msds-icon.png"; sourceTree = "<group>"; };
@@ -95,7 +99,6 @@
 		CD3613DD1A49C4B4006AE87E = {
 			isa = PBXGroup;
 			children = (
-				CD0F71D31A624149001C8CF0 /* QuartzCore.framework */,
 				CD3613E81A49C4B4006AE87E /* SmartSpray */,
 				CD3614011A49C4B4006AE87E /* SmartSprayTests */,
 				CD3613E71A49C4B4006AE87E /* Products */,
@@ -115,10 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				CD3613EB1A49C4B4006AE87E /* AppDelegate.swift */,
-				CD3613F51A49C4B4006AE87E /* Images.xcassets */,
-				CD3613ED1A49C4B4006AE87E /* SmartSpray.xcdatamodeld */,
 				CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */,
 				CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */,
+				CDEDC2371A626E9700EA0127 /* CBCentralManagerViewController.swift */,
 				CD3613E91A49C4B4006AE87E /* Supporting Files */,
 			);
 			path = SmartSpray;
@@ -127,14 +129,11 @@
 		CD3613E91A49C4B4006AE87E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD0F71D11A623F56001C8CF0 /* CoreBluetooth.framework */,
-				CDF0D7EB1A4F5DE400FBA892 /* Foundation.framework */,
-				CDF0D7E91A4F5DDB00FBA892 /* UIKit.framework */,
-				CDF0D7E71A4F5DD400FBA892 /* CoreGraphics.framework */,
-				CDF0D7E51A4F5DC600FBA892 /* AVFoundation.framework */,
-				CDF0D7D81A4EA88200FBA892 /* Images */,
-				CDF0D7EF1A4F5FEC00FBA892 /* siren.mp3 */,
 				CD3613EA1A49C4B4006AE87E /* Info.plist */,
+				CD3613ED1A49C4B4006AE87E /* SmartSpray.xcdatamodeld */,
+				CDEDC23A1A62700B00EA0127 /* Frameworks */,
+				CDF0D7D81A4EA88200FBA892 /* Image Files */,
+				CDEDC2391A626FED00EA0127 /* Audio Files */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -156,10 +155,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CDF0D7D81A4EA88200FBA892 /* Images */ = {
+		CDEDC2391A626FED00EA0127 /* Audio Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDF0D7EF1A4F5FEC00FBA892 /* siren.mp3 */,
+			);
+			name = "Audio Files";
+			sourceTree = "<group>";
+		};
+		CDEDC23A1A62700B00EA0127 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD0F71D31A624149001C8CF0 /* QuartzCore.framework */,
+				CD0F71D11A623F56001C8CF0 /* CoreBluetooth.framework */,
+				CDF0D7EB1A4F5DE400FBA892 /* Foundation.framework */,
+				CDF0D7E91A4F5DDB00FBA892 /* UIKit.framework */,
+				CDF0D7E71A4F5DD400FBA892 /* CoreGraphics.framework */,
+				CDF0D7E51A4F5DC600FBA892 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDF0D7D81A4EA88200FBA892 /* Image Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD3613F51A49C4B4006AE87E /* Images.xcassets */,
 				CDF0D7F11A50B7B500FBA892 /* camera-icon.png */,
+				CDEDC2321A625B4500EA0127 /* Default-568h@2x.png */,
 				CDF0D7F21A50B7B500FBA892 /* message-icon.png */,
 				CDF0D7F31A50B7B500FBA892 /* phone-icon.png */,
 				CDF0D7F41A50B7B500FBA892 /* speaker-icon.png */,
@@ -168,7 +190,7 @@
 				CDF0D7D21A4EA87A00FBA892 /* separate-top-angle.png */,
 				CDF0D7D31A4EA87A00FBA892 /* smart-spray.png */,
 			);
-			name = Images;
+			name = "Image Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +278,7 @@
 				CDF0D7D61A4EA87A00FBA892 /* separate-top-angle.png in Resources */,
 				CDF0D7D71A4EA87A00FBA892 /* smart-spray.png in Resources */,
 				CDF0D7F61A50B7B500FBA892 /* message-icon.png in Resources */,
+				CDEDC2331A625B4500EA0127 /* Default-568h@2x.png in Resources */,
 				CDF0D7F71A50B7B500FBA892 /* phone-icon.png in Resources */,
 				CDF0D7D41A4EA87A00FBA892 /* msds-icon.png in Resources */,
 				CD3613F61A49C4B4006AE87E /* Images.xcassets in Resources */,
@@ -282,6 +305,7 @@
 				CD3613EC1A49C4B4006AE87E /* AppDelegate.swift in Sources */,
 				CD3613EF1A49C4B4006AE87E /* SmartSpray.xcdatamodeld in Sources */,
 				CDF0D7CF1A4EA68600FBA892 /* HomeViewController.swift in Sources */,
+				CDEDC2381A626E9700EA0127 /* CBCentralManagerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
