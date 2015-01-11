@@ -8,13 +8,19 @@
 
 import UIKit
 import CoreData
+import CoreBluetooth
+import QuartzCore
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CBCentralManagerDelegate, CBPeripheralDelegate {
 
+    let peripheralKey = "smartSprayers"
+    
     var window: UIWindow?
-
-
+    var manager: CBCentralManager?
+    var peripheral: CBPeripheral?
+    var smartSprayers = NSMutableArray()
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -24,6 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController = mainViewController
         window?.makeKeyAndVisible()
+    
+        self.manager = CBCentralManager(delegate: self, queue: nil)
+        self.startScan()
         
         return true
     }
@@ -49,9 +58,89 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
+        
+        if let p = self.peripheral {
+            manager?.cancelPeripheralConnection(p)
+        }
+        
         self.saveContext()
     }
 
+    // MARK: - Start/Stop Scan methods
+    
+    func startScan() {
+        // TODO: scan for peripherals
+        
+        
+//        manager?.scanForPeripheralsWithServices
+    }
+    
+    func stopScan() {
+        // TODO:
+        manager?.stopScan()
+    }
+    
+    // MARK: - CBCentralManager delegate methods
+
+    func centralManagerDidUpdateState(central: CBCentralManager!) {
+        // TODO
+//        [self isLECapableHardware];
+
+    }
+    
+    func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!, advertisementData: [NSObject : AnyObject]!, RSSI: NSNumber!) {
+        var peripherals = self.mutableArrayValueForKey(peripheralKey)
+        
+        if !self.smartSprayers.containsObject(peripheral) {
+            peripherals.addObject(peripheral)
+        }
+        
+        // Retrieve already known devices
+        manager?.retrievePeripheralsWithIdentifiers([peripheral.identifier])
+    }
+    
+    func centralManager(central: CBCentralManager!, didRetrievePeripherals peripherals: [AnyObject]!) {
+        println("Retrieved peripheral: \(peripherals.count) - \(peripherals)")
+    }
+    
+    func centralManager(central: CBCentralManager!, didConnectPeripheral peripheral: CBPeripheral!) {
+        peripheral.delegate = self
+        peripheral.discoverServices(nil)
+        
+        
+    }
+    
+    func centralManager(central: CBCentralManager!, didDisconnectPeripheral peripheral: CBPeripheral!, error: NSError!) {
+//        self.connected = "Not connected"
+//        connectButton.title = "Connect"
+        
+        if let p = self.peripheral {
+            p.delegate = nil
+        }
+        
+        self.peripheral = nil
+    }
+    
+    
+    func centralManager(central: CBCentralManager!, didFailToConnectPeripheral peripheral: CBPeripheral!, error: NSError!) {
+        println("Fail to connect to peripheral: \(peripheral) with error = \(error.localizedDescription)")
+        
+//        connectButton.title = "Connect"
+        
+        if let p = self.peripheral {
+            p.delegate = nil
+        }
+        
+        self.peripheral = nil
+        
+    }
+    
+    // MARK: - CBPeripheral delegate methods
+    
+    
+    
+    
+    
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {
