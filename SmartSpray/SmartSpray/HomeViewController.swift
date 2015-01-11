@@ -12,13 +12,15 @@ import AVFoundation
 class HomeViewController: UIViewController {
     
     var audioPlayer : AVAudioPlayer?
-
+    var centralView = CBCentralManagerViewController()
+    var peripheralView = CBPeripheralViewController()
+    
     override init() {
         super.init(nibName: "HomeViewController", bundle: nil)
     }
-
+    
     required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(nibName: "HomeViewController", bundle: nil)
     }
     
     override func viewDidLoad() {
@@ -50,11 +52,11 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func phoneButtonPressed(sender: AnyObject) {
-        
+        self.navigationController?.pushViewController(centralView, animated: true)
     }
     
     @IBAction func messageButtonPressed(sender: AnyObject) {
-        
+        self.navigationController?.pushViewController(peripheralView, animated: true)
     }
     
     @IBAction func cameraButtonPressed(sender: AnyObject) {

@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBCentralManagerViewController" customModule="SmartSpray" customModuleProvider="target">
             <connections>
+                <outlet property="myTextView" destination="Hid-0y-mtq" id="fLb-yz-keL"/>
+                <outlet property="titleLabel" destination="Jc7-8M-bdL" id="bbG-2B-T0A"/>
                 <outlet property="view" destination="yVa-Ed-79M" id="qgQ-hA-1hN"/>
             </connections>
         </placeholder>

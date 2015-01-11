@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        window?.rootViewController = CBCentralManagerViewController()
+        var navController = UINavigationController()
+        navController.pushViewController(HomeViewController(), animated: true)
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
         
         return true
