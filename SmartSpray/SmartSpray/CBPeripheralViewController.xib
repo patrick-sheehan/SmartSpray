@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBPeripheralViewController" customModule="SmartSpray" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="iho-3M-ejP" customClass="CBPeripheralViewController" customModule="SmartSpray" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="8W8-P9-bbR"/>
+                <viewControllerLayoutGuide type="bottom" id="ZUc-fJ-fzK"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="SX5-gj-8XQ">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQx-tJ-7Lt">
+                        <rect key="frame" x="16" y="0.0" width="568" height="300"/>
+                        <state key="normal" title="Stage 1 Activation">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="activateFirstStage" destination="iho-3M-ejP" eventType="touchUpInside" id="GuJ-nV-gtc"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJH-df-uat">
+                        <rect key="frame" x="16" y="300" width="568" height="300"/>
+                        <inset key="contentEdgeInsets" minX="25" minY="25" maxX="25" maxY="25"/>
+                        <state key="normal" title="Stage 2 Activation">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="OQx-tJ-7Lt" secondAttribute="trailing" id="1Kg-83-GVm"/>
+                    <constraint firstItem="OQx-tJ-7Lt" firstAttribute="width" secondItem="mJH-df-uat" secondAttribute="width" id="1tG-pg-tw6"/>
+                    <constraint firstItem="OQx-tJ-7Lt" firstAttribute="height" secondItem="mJH-df-uat" secondAttribute="height" id="7We-zh-HwQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mJH-df-uat" secondAttribute="trailing" id="9l6-BW-Uff"/>
+                    <constraint firstAttribute="centerX" secondItem="OQx-tJ-7Lt" secondAttribute="centerX" id="BSV-ic-r2U"/>
+                    <constraint firstAttribute="centerX" secondItem="mJH-df-uat" secondAttribute="centerX" id="M3B-SX-GvK"/>
+                    <constraint firstItem="ZUc-fJ-fzK" firstAttribute="top" secondItem="mJH-df-uat" secondAttribute="bottom" id="MTg-Q1-sXJ"/>
+                    <constraint firstItem="mJH-df-uat" firstAttribute="leading" secondItem="SX5-gj-8XQ" secondAttribute="leadingMargin" id="TfK-xW-hYx"/>
+                    <constraint firstItem="OQx-tJ-7Lt" firstAttribute="leading" secondItem="SX5-gj-8XQ" secondAttribute="leadingMargin" id="WMp-CK-7h5"/>
+                    <constraint firstItem="mJH-df-uat" firstAttribute="top" secondItem="OQx-tJ-7Lt" secondAttribute="bottom" id="aFV-bp-K9c"/>
+                    <constraint firstItem="OQx-tJ-7Lt" firstAttribute="top" secondItem="SX5-gj-8XQ" secondAttribute="topMargin" id="mgr-Hn-HFP"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="87" y="377"/>
+        </viewController>
+    </objects>
+</document>

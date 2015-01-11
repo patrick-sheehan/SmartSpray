@@ -15,6 +15,8 @@
 		CD3614051A49C4B4006AE87E /* SmartSprayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3614041A49C4B4006AE87E /* SmartSprayTests.swift */; };
 		CDEDC2331A625B4500EA0127 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDEDC2321A625B4500EA0127 /* Default-568h@2x.png */; };
 		CDEDC2381A626E9700EA0127 /* CBCentralManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDC2371A626E9700EA0127 /* CBCentralManagerViewController.swift */; };
+		CDEDC23C1A6274C500EA0127 /* CBPeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDC23B1A6274C500EA0127 /* CBPeripheralViewController.swift */; };
+		CDEDC23E1A62792F00EA0127 /* CBPeripheralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEDC23D1A62792F00EA0127 /* CBPeripheralViewController.xib */; };
 		CDF0D7CA1A4EA5A600FBA892 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */; };
 		CDF0D7CF1A4EA68600FBA892 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */; };
 		CDF0D7D41A4EA87A00FBA892 /* msds-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0D7D01A4EA87A00FBA892 /* msds-icon.png */; };
@@ -55,6 +57,8 @@
 		CD3614041A49C4B4006AE87E /* SmartSprayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSprayTests.swift; sourceTree = "<group>"; };
 		CDEDC2321A625B4500EA0127 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		CDEDC2371A626E9700EA0127 /* CBCentralManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBCentralManagerViewController.swift; sourceTree = "<group>"; };
+		CDEDC23B1A6274C500EA0127 /* CBPeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBPeripheralViewController.swift; sourceTree = "<group>"; };
+		CDEDC23D1A62792F00EA0127 /* CBPeripheralViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBPeripheralViewController.xib; sourceTree = "<group>"; };
 		CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CDF0D7D01A4EA87A00FBA892 /* msds-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "msds-icon.png"; path = "Images.xcassets/msds-icon.png"; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				CDF0D7CE1A4EA68600FBA892 /* HomeViewController.swift */,
 				CDF0D7C91A4EA5A600FBA892 /* HomeViewController.xib */,
 				CDEDC2371A626E9700EA0127 /* CBCentralManagerViewController.swift */,
+				CDEDC23B1A6274C500EA0127 /* CBPeripheralViewController.swift */,
+				CDEDC23D1A62792F00EA0127 /* CBPeripheralViewController.xib */,
 				CD3613E91A49C4B4006AE87E /* Supporting Files */,
 			);
 			path = SmartSpray;
@@ -276,6 +282,7 @@
 				CDF0D7F01A4F5FEC00FBA892 /* siren.mp3 in Resources */,
 				CDF0D7F51A50B7B500FBA892 /* camera-icon.png in Resources */,
 				CDF0D7D61A4EA87A00FBA892 /* separate-top-angle.png in Resources */,
+				CDEDC23E1A62792F00EA0127 /* CBPeripheralViewController.xib in Resources */,
 				CDF0D7D71A4EA87A00FBA892 /* smart-spray.png in Resources */,
 				CDF0D7F61A50B7B500FBA892 /* message-icon.png in Resources */,
 				CDEDC2331A625B4500EA0127 /* Default-568h@2x.png in Resources */,
@@ -304,6 +311,7 @@
 			files = (
 				CD3613EC1A49C4B4006AE87E /* AppDelegate.swift in Sources */,
 				CD3613EF1A49C4B4006AE87E /* SmartSpray.xcdatamodeld in Sources */,
+				CDEDC23C1A6274C500EA0127 /* CBPeripheralViewController.swift in Sources */,
 				CDF0D7CF1A4EA68600FBA892 /* HomeViewController.swift in Sources */,
 				CDEDC2381A626E9700EA0127 /* CBCentralManagerViewController.swift in Sources */,
 			);
