@@ -20,12 +20,20 @@ class CBPeripheralViewController: UIViewController, CBPeripheralManagerDelegate,
     var dataToSend = NSData()
     var sendDataIndex = NSInteger()
     
+    override init() {
+        super.init(nibName: "CBPeripheralViewController", bundle: nil)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(nibName: "CBPeripheralViewController", bundle: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.myPeripheralManager = CBPeripheralManager(delegate: self, queue: nil)
         
-        var options = NSDictionary(object: CBAdvertisementDataServiceUUIDsKey, forKey:CBUUID(string:TRANSFER_SERVICE_UUID))
+        var options = NSDictionary(object: CBUUID(string:TRANSFER_SERVICE_UUID), forKey:CBAdvertisementDataServiceUUIDsKey)
 
         self.myPeripheralManager.startAdvertising(options)
     }
@@ -53,6 +61,10 @@ class CBPeripheralViewController: UIViewController, CBPeripheralManagerDelegate,
         self.sendData()
     }
     @IBAction func activateFirstStage() {
+        
+    }
+    
+    @IBAction func activateSecondStage() {
         
     }
     
